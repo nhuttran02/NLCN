@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\ImageSearchController;
 use App\Http\Controllers\ImageRecognitionController;
 use App\Http\Controllers\Admin\CartController;
 use App\Http\Controllers\Admin\RoleController;
@@ -175,5 +175,12 @@ Route::get('search', [App\Http\Controllers\SearchController::class, 'search']);
 //     return response()->json($result);
 // });
 Route::post('/recognize-image', [ImageRecognitionController::class, 'recognizeImage']);
+
+//search image 
+Route::get('/image-search', function () {
+    return view('image_search');
+});
+
+Route::post('/image-search', [ImageSearchController::class, 'search'])->name('image.search');
 
 
