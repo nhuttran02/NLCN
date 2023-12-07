@@ -1,27 +1,9 @@
 <?php
 
-namespace Tests\Feature;
-namespace App\Tests;
+namespace App\Tests\TestCase;
 
-
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Tests\TestCase;
 use App\Models\ImageClassifier;
-
-// class ExampleTest extends TestCase
-// {
-//     /**
-//      * A basic test example.
-//      *
-//      * @return void
-//      */
-//     public function test_example()
-//     {
-//         $response = $this->get('/');
-
-//         $response->assertStatus(200);
-//     }
-// }
+use PHPUnit\Framework\TestCase;
 
 class ImageClassifierTest extends TestCase
 {

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ImageRecognitionController;
 use App\Http\Controllers\Admin\CartController;
 use App\Http\Controllers\Admin\RoleController;
 use App\Http\Controllers\Admin\UserController;
@@ -163,3 +164,16 @@ Route::get('about-us',function (){
 Route::post('contact', [App\Http\Controllers\MainController::class, 'addContact']);
 
 Route::get('search', [App\Http\Controllers\SearchController::class, 'search']);
+
+// route tim kiem hinh anh
+// Route::post('/classify', function (Request $request) {
+//     $image = $request->file('image');
+
+//     $classifier = new ImageClassifier(storage_path('models/mobilenetv2.h5'));
+//     $result = $classifier->classifyImage($image);
+
+//     return response()->json($result);
+// });
+Route::post('/recognize-image', [ImageRecognitionController::class, 'recognizeImage']);
+
+
