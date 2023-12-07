@@ -8,7 +8,7 @@
 
                 <!-- Logo desktop -->
                 <a href="/" class="logo">
-                    <img src="/template/images/icons/logo-01.png" alt="IMG-LOGO">
+                    <img src="/template/images/icons/logostore2.png" alt="IMG-LOGO">
                 </a>
 
                 <!-- Menu desktop -->
@@ -25,6 +25,9 @@
                         </li>
                         <li>
                             <a href="/contact">Liên Hệ</a>
+                        </li>
+                        <li>
+                            <a href="/image-search">Tìm qua hình ảnh</a>
                         </li>
                     </ul>
                 </div>

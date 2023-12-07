@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use TensorFlow\TensorFlow;
+use App\Models\Product;
 
 class ImageSearchController extends Controller
 {
@@ -13,6 +14,7 @@ class ImageSearchController extends Controller
     // $image = $request->file('image');
     // // Tiếp theo: sử dụng TensorFlow và MobilenetV2 để phân loại hình ảnh
     // Giả sử $result là kết quả tìm kiếm
+    $computedFeatureVector = '...';
     $result = Product::where('feature_vector', $computedFeatureVector)->first();
 
     // Hiển thị kết quả

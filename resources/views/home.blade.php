@@ -21,7 +21,7 @@
                                 <div class="layer-slick1 animated visible-false" data-appear="fadeInDown"
                                      data-delay="0">
                             <span class="ltext-101 cl2 respon2">
-                                Gardeners
+                                Nstore
                             </span>
                                 </div>
 
